@@ -20,6 +20,8 @@ default Dev Hub; shows scratch-org expiry dates; lets you filter and hide discon
 
 ## Connecting
 
+![Logging in](img/orgs-login.png)
+
 **Connect** asks where the org lives before it opens a browser:
 
 | Choice | Where it logs in |
@@ -36,6 +38,8 @@ panel stops waiting and says so instead of hanging.
 
 ## The default org
 
+![The org menu](img/orgs-menu.png)
+
 Right-click an org → **Set as Default Org**. That runs `sf config set target-org`, the same setting the CLI reads,
 so it applies to your terminal too.
 
@@ -51,6 +55,8 @@ config files) and refreshes the schema for you. See [Schema](schema.md).
 **Dev Hub.** *Set as Default Dev Hub* does the same for `target-dev-hub`.
 
 ## Org details
+
+![Org details](img/orgs-details.png)
 
 Right-click → **Details** (or the details button) runs `sf org display` and shows what came back: username, org id,
 instance URL, API version, edition, connection status, and for scratch orgs the expiry date.

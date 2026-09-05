@@ -20,13 +20,17 @@ open the project and when you change default org. [Schema](schema.md) has the re
 
 ## Errors as you type
 
+![Errors the engine catches](img/apex-errors.png)
+
+![The message behind one of them](img/apex-error-tooltip.png)
+
 **What it does.** Compiles the file you are editing and underlines what Salesforce would reject: unknown types,
 wrong argument counts, bad assignments, unresolved fields.
 
 **When it helps.** The deploy round trip stops being how you find out you misspelled a field.
 
-**What it does not do.** It is not a linter and has no opinions about style, naming or complexity. It also does not
-run your tests — a class that compiles can still fail on the org.
+**What it does not do.** It is not a linter and has no opinions about style, naming or complexity. A class that
+compiles can still fail on the org — running its tests is [a page of its own](tests.md).
 
 ## Navigation
 
@@ -45,6 +49,8 @@ its public signature and no further, because that is all Salesforce exposes.
 
 ## Find usages
 
+![Ctrl+B on a declaration shows where it is used](img/apex-show-usages.png)
+
 `Alt+F7` on a method, field, type, or SObject field.
 
 ![Find usages](img/apex-find-usages.png)
@@ -56,6 +62,8 @@ next to it are two different symbols and give two different answers.
 and will not be listed, which is the whole point.
 
 ## Hover
+
+![A signature on hover](img/apex-hover.png)
 
 Point at a symbol and you get its signature and type: parameter types, return type, field type, and the doc comment
 when there is one.
@@ -95,6 +103,8 @@ SFellow — see the schema note at the top of this page.
 
 ## Structure
 
+![The file as a tree](img/apex-structure.png)
+
 `Alt+7` gives the class as a tree — fields, properties, methods with signatures, inner classes. Synthetic members
 the compiler invents (an exception subclass's generated `getMessage`, for instance) are pruned, because they are not
 in your file and jumping to them goes nowhere.
@@ -106,6 +116,8 @@ method, which is a detail worth knowing only because it is the reason declaratio
 behave like fields.
 
 ## SOQL
+
+![Fields completing inside a query](img/apex-soql.png)
 
 Inline queries are highlighted as SOQL rather than as one long string, and completion works inside them for object
 and field names. Clicking a field inside a query navigates to the field.

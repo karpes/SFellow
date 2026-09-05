@@ -9,6 +9,8 @@ use, and the two commands you were about to run anyway are one click each.
 
 ## New components
 
+![New components, gated to their folder](img/project-new-component.png)
+
 **New → SFellow** in the project tree creates the six things you make most often, with both halves —
 the source file and its `-meta.xml` — in the right folder:
 
@@ -19,6 +21,8 @@ The templates are plain and direct: a class is a class, not a scaffold with five
 **What it does not do.** It does not deploy what it created. A new class exists locally until you deploy it.
 
 ## The `-meta.xml` nesting
+
+![Companion files nested under their component](img/project-meta-nesting.png)
 
 ![Nested meta.xml](img/project-meta-nesting.png)
 

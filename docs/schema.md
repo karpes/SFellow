@@ -6,6 +6,8 @@ what your org contains.
 
 ## What Refresh Schema does
 
+![A generated SObject stand-in](img/apex-sobject-stub.png)
+
 **Refresh Schema** in the panel header describes your default org and writes:
 
 - **faux classes** — one generated Apex class per SObject, standard and custom, with a member per field. These are

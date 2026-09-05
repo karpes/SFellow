@@ -23,6 +23,8 @@ A bundle is a folder — `.html`, `.js`, `.css`, `.js-meta.xml` — and SFellow 
 
 ### The template
 
+![An LWC template](img/lwc-template.png)
+
 **Bindings.** Every `{name}` in a template is a real reference to a member of the component's class. Completion
 inside the braces, `Ctrl+Click` to the member, hover for its kind and signature, and `Alt+F7` from the member back
 to the template.
@@ -60,6 +62,8 @@ that calls a given method from the Apex side.
 Classes you declare in the bundle's `.css` complete inside `class=` in the template.
 
 ### What completes, in one list
+
+![Attributes completing in a template](img/lwc-completion.png)
 
 Completion comes up as you type — you do not have to ask for it.
 

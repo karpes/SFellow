@@ -2,6 +2,8 @@
 
 ## "Salesforce CLI not found"
 
+![Pointing SFellow at the CLI](img/troubleshooting-cli.png)
+
 SFellow looks for `sf` on your `PATH` and in the usual install locations. When it cannot find one, the panel says so
 and opens its **Salesforce CLI** section, where you can point at the executable yourself — type the path or use
 **Browse** (a file or a folder both work).
@@ -53,6 +55,17 @@ Look at the top of the editor. If SFellow says completion in this file is limite
 names the measured cost of analysing the file. It happens in files that are expensive to analyse — usually because of
 how much they reference rather than their length. Diagnostics, go to declaration, hover and find usages still work in
 that file, and other files are unaffected.
+
+## Logging is on, but no logs arrive
+
+Salesforce expires logging on its own — the **Logging** line in the Logs section counts down the minutes it has left
+and says *Expired* when they run out. Switch it on again, reproduce, then press **Refresh**: the list is read when
+you ask for it, never on its own.
+
+## The org refuses to run tests
+
+Running Apex tests needs the **View All Data** system permission. Without it the org rejects the run, and SFellow
+repeats the reason it gave.
 
 ## Deploy fails with a conflict
 

@@ -14,10 +14,13 @@ Tick whatever you want and press **Retrieve**; the files land in your project's 
 
 **When it helps.** Onboarding onto an org you did not build. "What Apex is even in here" is one expand away.
 
-**What it does not do.** It does not show you a diff against your local copy, and it does not warn you that a
-retrieve will overwrite local changes. Retrieve writes files. Commit first.
+**Before you press it.** Retrieve writes files, and the browser retrieves what you ticked without comparing it to
+what you have. To see the difference first, use **Compare with Org** on the file in [Changed Files](deploy.md), which
+also has a **Retrieve from Org (Pull)** that asks before it overwrites.
 
 ## Finding a type
+
+![Filtering the types and picking components](img/retrieve-pick.gif)
 
 An org reports roughly two hundred metadata types, and until you know the exact XML name, scrolling is the only tool
 you have. The filter box above the tree narrows the list as you type.

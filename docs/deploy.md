@@ -10,7 +10,7 @@ Three ways, all running `sf project deploy start` underneath:
 
 - **Deploy Current File** — the file in the editor;
 - right-click in the project tree → **Deploy** — whatever you selected, one file or a folder;
-- **Changed Files** — everything you have edited since the last deploy.
+- **Changed Files** — everything that differs from what last went to the org.
 
 **What it does not do.** It does not resolve conflicts. If somebody changed the same component in the org, the deploy
 fails on a conflict and you decide what to do — SFellow will not pick a winner for you.
@@ -19,15 +19,28 @@ fails on a conflict and you decide what to do — SFellow will not pick a winner
 
 ![Changed files](img/deploy-changed-files.png)
 
-A plain list of the files you have changed — **any** change at all, a whole new method or one stray space. Nothing
-is judged or grouped: if you touched it, it is in the list.
+**What it does.** Everything that differs from the version that last went to the org, as a tree grouped by metadata
+type. Tick what you want and press **Deploy**, or **Validate** to rehearse it. **Select All** takes the lot, and
+**Filter** narrows a long list.
 
-Tick what you want and press **Deploy**. A file drops off the list once it has been deployed.
+A file leaves the list when it goes to the org — and also when you undo your way back to the deployed version, since
+at that point there is nothing left to deploy.
 
 **When it helps.** Ten minutes of edits across four classes and a trigger, one deploy.
 
-**What it does not do.** It watches your edits in this IDE, not git and not the org. A file changed by another tool is
-not in the list.
+**Seeing what changed.** Double-click a row to open the file, or right-click it:
+
+| Action | What you get |
+|---|---|
+| **Compare with Last Deployed** | a diff against the version that last went to the org — no org call, so it works offline |
+| **Compare with Org** | a diff against what is in the org right now, fetched for the comparison |
+| **Retrieve from Org (Pull)** | the org's version replaces what is on disk, after confirming |
+| **Open File**, **Show in Project View**, **Copy Path** | the usual ways to get to the file |
+| **Remove Selected from List** | drops rows you do not intend to deploy |
+
+**Compare with Last Deployed** reads the text in your editor, so an unsaved edit shows up in the diff.
+
+![What the right click offers](img/deploy-changed-files-menu.png)
 
 ## Deploy on save
 
@@ -46,7 +59,7 @@ the half-written version. Check which org the panel is pointed at.
 
 ## Test levels
 
-![Test levels](img/deploy-test-levels.png)
+![Choosing what Salesforce runs](img/deploy-test-levels.png)
 
 Pick one before you deploy:
 
@@ -73,8 +86,8 @@ there.
 The console prints each failing test with its message and stack trace, and the stack frames are **links** — click one
 and you are on the line in your class.
 
-**What it does not do.** It does not show coverage numbers per class, and it does not tell you which line was not
-covered. Salesforce reports that in the deployment result; surfacing it is not built yet.
+Coverage is a page of its own — see [Apex tests](tests.md) for per-class percentages and the lines that were not
+covered.
 
 ## Deleting from the org
 

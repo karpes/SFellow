@@ -27,7 +27,7 @@ and retrieve straight after. See [Project and tree](project.md).
 
 The **SFellow** tool window appears on the right edge. Everything below happens in it.
 
-![Connecting an org](img/getting-started-connect-org.png)
+![Connecting an org](img/orgs-login.png)
 
 ## 3. Connect an org
 
@@ -86,9 +86,19 @@ tests straight from the console — see [Deploy](deploy.md).
 Everything that runs shows up in the **Console** section as a card: the command that ran, how long it took, what came
 back. A compilation error in there is a link — click it and you land on the line.
 
+## 8. Run its tests
+
+Deploying a class is half the answer; the other half is whether its tests still pass. Click the run arrow in the
+gutter next to an `@IsTest` class, and the results come back into a **Tests** tab beside the console — failures with
+their stack traces, each frame a link into your code.
+
+If the class has edits you have not deployed, SFellow offers to deploy them first: a test run executes what is in
+the org. Coverage and the per-test debug log are a click away — see [Apex tests](tests.md).
+
 ## Where to go next
 
 - Working against several orgs a day → [Orgs](orgs.md)
 - Pulling down a large package → [Retrieve](retrieve.md)
 - Writing LWC → [LWC, Aura, Visualforce](lwc-aura-visualforce.md)
+- Chasing a bug through a debug log → [Debug logs](logs.md)
 - Something is not working → [Troubleshooting](troubleshooting.md)

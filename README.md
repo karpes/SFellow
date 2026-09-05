@@ -4,7 +4,7 @@ A Salesforce plugin for IntelliJ IDEA and WebStorm, built around the `sf` CLI.
 
 Retrieve and deploy without leaving the editor, and write Apex, LWC, Aura and Visualforce with the editor actually
 understanding what you wrote — completion, go-to-definition, find usages, hover and error highlighting, all computed
-inside the IDE.
+inside the IDE. Run the tests and read the debug log without leaving it either.
 
 ![The SFellow panel](docs/img/readme-overview.png)
 
@@ -40,6 +40,8 @@ does not help.
 | [Retrieve](docs/retrieve.md) | Metadata browser, type search, inventory cache, manifests, managed components, folders |
 | [Deploy](docs/deploy.md) | Deploying a file or a selection, changed files, deploy on save, test levels, failed tests |
 | [Apex](docs/apex.md) | Highlighting, navigation, usages, hover, errors, completion, SOQL, SObjects, labels, settings |
+| [Apex tests](docs/tests.md) | Running tests in the org, reading the results, coverage, the log of a single test |
+| [Debug logs](docs/logs.md) | Switching logging on, the log list, reading a long log, deleting |
 | [LWC, Aura, Visualforce](docs/lwc-aura-visualforce.md) | What is supported for each of the three, separately and honestly |
 | [Anonymous Apex](docs/anonymous-apex.md) | Scratch buffers, running them, reading what came back |
 | [Console](docs/console.md) | Operation cards, command echo, clickable errors |

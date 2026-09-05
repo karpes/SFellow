@@ -3,9 +3,10 @@
 The Apex equivalent of a scratch pad: a few lines you want to run against an org right now, without deploying a
 class to hold them.
 
-![The Anonymous Apex section](img/anonymous-apex.png)
 
 ## Buffers
+
+![The Anonymous Apex section](img/anon-section.png)
 
 **What it does.** The panel's **Anonymous Apex** section holds tabs. Each tab is a real file that survives restarts,
 so the query you wrote on Monday is still there on Wednesday. **+** makes a new one, **✕** deletes it.
