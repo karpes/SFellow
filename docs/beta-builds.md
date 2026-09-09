@@ -1,6 +1,6 @@
 # Beta builds and why they expire
 
-Short version: **each beta stops working about six weeks after it was built.** Ask for a newer one and carry on.
+Short version: **each beta stops working about six months after it was built.** Ask for a newer one and carry on.
 
 The longer version is below, because a build that switches itself off deserves an explanation rather than a
 surprise.
