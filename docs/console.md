@@ -23,7 +23,22 @@ separate cards: the second one buffers and prints whole, rather than interleavin
 ## Clickable errors
 
 Deployment errors, failed test frames, and anonymous-Apex compile errors are links. Click one and you land on the
-line, in the right file.
+line, in the right file. A path that does not open anything here — the org sometimes reports a problem against a
+file that exists only inside its own response — is printed as plain text rather than as a link that goes nowhere.
+
+## When something fails
+
+The card says what happened in words, not just that it failed: the CLI's own message, or the org's. A lost
+connection is called that — "could not reach the org… try again" — with the original text kept in brackets, because
+`TypeError: fetch failed` explains nothing to the person reading it.
+
+## Stopping a command
+
+The toolbar has a **Stop** next to **Clear**; it lights up while something is running. Long operations also run as
+regular IDE background tasks, so the status bar can stop them too, and the Apex test tree has its own Stop.
+
+However you stop it, the command's card closes as **⊘ Stopped** — grey, not a red failure. A command you withdrew is
+not an error, and reporting it as one would blame the org for your own decision.
 
 ## What it deliberately does not show
 
