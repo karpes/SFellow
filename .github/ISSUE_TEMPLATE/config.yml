@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Troubleshooting first
+    url: https://github.com/karpes/SFellow/blob/main/docs/troubleshooting.md
+    about: sf not found, no logs, another Salesforce plugin installed — likely already answered here.
+  - name: A newer beta
+    url: https://github.com/karpes/SFellow/blob/main/docs/beta-builds.md
+    about: Builds expire. Ask for a fresh one before reporting that everything stopped working.

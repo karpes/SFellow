@@ -1,0 +1,56 @@
+name: Bug report
+description: Something in SFellow does not work the way it should
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Four facts turn a report into a fix. Without them the answer is
+        "please send your log", and that costs you another day.
+
+  - type: input
+    id: version
+    attributes:
+      label: SFellow version
+      description: Settings ▸ Plugins ▸ SFellow — the version is under the name.
+      placeholder: 0.0.1-beta-701
+    validations:
+      required: true
+
+  - type: input
+    id: ide
+    attributes:
+      label: IDE and build
+      description: Help ▸ About ▸ Copy, then paste here. The build number matters.
+      placeholder: IntelliJ IDEA 2026.2.2 (Ultimate) · IU-262.10315.125 · Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what happened instead.
+      placeholder: |
+        1. Opened a .cls and changed a line
+        2. Pressed Ctrl+S
+        Expected: the file deploys. Instead: nothing, no error.
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: idea.log
+      description: |
+        Help ▸ Show Log in Files, then drag `idea.log` into this box.
+        It is the difference between a guess and a diagnosis — a plugin that
+        stays silent looks the same as one that was never called at all.
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
+      description: Optional. A screenshot of the editor is worth a paragraph.

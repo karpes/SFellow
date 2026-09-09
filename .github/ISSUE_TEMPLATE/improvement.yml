@@ -1,0 +1,29 @@
+name: Improvement
+description: SFellow works, but it could work better
+labels: ["improvement"]
+body:
+  - type: textarea
+    id: today
+    attributes:
+      label: What is awkward today
+      description: Describe what you actually do now, not the solution you have in mind.
+      placeholder: |
+        The console opens on every save. With deploy-on-save on, that is every
+        few seconds, and it covers a third of the editor.
+    validations:
+      required: true
+
+  - type: textarea
+    id: instead
+    attributes:
+      label: What you would expect instead
+      description: If you have a concrete shape in mind, say it — but the problem above matters more.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: SFellow version
+      description: Optional, but it tells us whether you already have something newer.
+      placeholder: 0.0.1-beta-701
