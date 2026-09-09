@@ -61,3 +61,8 @@ make a report answerable:
   attach as it is.
 
 The source is closed; this repository is documentation, releases and issues.
+
+## License
+
+SFellow is proprietary software, licensed and not sold. The terms you accept by installing it are in
+[LICENSE](LICENSE) — read them before you install, not after.
