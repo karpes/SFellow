@@ -3,7 +3,7 @@
 A Salesforce plugin for IntelliJ IDEA and WebStorm, built around the `sf` CLI.
 
 Retrieve and deploy without leaving the editor, and write Apex, LWC, Aura and Visualforce with the editor actually
-understanding what you wrote — completion, go-to-definition, find usages, hover and error highlighting, all computed
+understanding what you wrote - completion, go-to-definition, find usages, hover and error highlighting, all computed
 inside the IDE. Run the tests and read the debug log without leaving it either.
 
 ![The SFellow panel](docs/img/readme-overview.png)
@@ -16,7 +16,7 @@ inside the IDE. Run the tests and read the debug log without leaving it either.
 
 ## Install
 
-1. Ask for the current build — email **karpes.dev@gmail.com**. Builds are handed out directly for now.
+1. Ask for the current build - email **karpes.dev@gmail.com**. Builds are handed out directly for now.
 2. In the IDE: **Settings → Plugins → ⚙ → Install Plugin from Disk…**, pick the zip, restart.
 3. Open a Salesforce project (one with an `sfdx-project.json`) and the **SFellow** tool window appears on the right.
 
@@ -27,7 +27,7 @@ New to the plugin? [Getting started](docs/getting-started.md) walks the first ha
 SFellow is a paid product. The price is not set yet, and nothing in the current builds asks you for money.
 
 What the current builds do have is an **expiry date**: each beta stops working roughly six weeks after it was built,
-and you ask for a newer one to replace it. That is a beta mechanism, not a countdown to a paywall —
+and you ask for a newer one to replace it. That is a beta mechanism, not a countdown to a paywall -
 [Beta builds](docs/beta-builds.md) explains exactly what expires, what keeps working, and why moving your clock back
 does not help.
 
@@ -65,4 +65,4 @@ The source is closed; this repository is documentation, releases and issues.
 ## License
 
 SFellow is proprietary software, licensed and not sold. The terms you accept by installing it are in
-[LICENSE](LICENSE) — read them before you install, not after.
+[LICENSE](LICENSE) - read them before you install, not after.
