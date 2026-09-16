@@ -34,9 +34,15 @@ refresh. Refresh again.
 
 ## Apex features do nothing at all
 
-The Apex engine needs a component that the plugin downloads on first use (Salesforce's compiler core; the licence
-lets us download it, not ship it). If that download failed — offline, proxy, firewall — the panel says so and offers
-**Retry**.
+The Apex engine ships inside the plugin, so there is nothing to download and nothing that can fail on a first run —
+if Apex features are silent, something switched them off rather than something being missing.
+
+Two things switch them off, and both switch off all of them at once (errors, completion, go to definition, find
+usages, hover, structure):
+
+- **the build expired** — see [Beta builds](beta-builds.md);
+- **the engine is turned off** in the registry (`sfellow.apex.engine.enabled`), the manual off switch for small
+  heaps. Turn it back on and restart.
 
 ## Another Salesforce plugin is installed
 

@@ -76,8 +76,14 @@ subsection says where its numbers came from and when — **Last test run** or **
 **When it helps.** Production deploys need coverage, and this is where you find out you are short of it before the
 deploy tells you.
 
+**Where the folder percentages appear.** On `classes` and `triggers` — the folders that actually hold Apex. Every
+folder above them would repeat the same number four times over, which tells you nothing you did not already know.
+
 **What it does not do.** It does not treat unmeasured code as untested: a class that was not part of the run is left
-alone rather than painted red and called `0 %`.
+alone rather than painted red and called `0 %`. The org helps this along by answering **Fetch coverage from org**
+with a row for every class whether or not anything has ever covered it — rows with no lines in them are not
+measurements, and you are told so: *"the org returned 53 class(es), none with recorded lines — run the tests with
+code coverage first"*.
 
 ![Coverage in the project tree](img/tests-project-coverage.png)
 
@@ -95,5 +101,12 @@ them.
 ![Picking what to run](img/tests-section.png)
 
 ![Choosing classes and methods](img/tests-pick.gif)
+
+**Run Failed Tests**, the fourth button, re-runs what just went red — only the methods of the last run, in the same
+mode it used. Ask for a run without logs and the re-run is without logs too; ask for coverage and it keeps coverage.
+It is disabled when the last run was all green, which is its way of saying there is nothing to repeat.
+
+While any of this is running, the **Tests** header line animates — the same stripe Organizations, Retrieve,
+Deployment, Logs and Anonymous Apex use to say they are working.
 
 **When it helps.** Running the six classes around the thing you just changed, without opening any of them.

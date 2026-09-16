@@ -48,6 +48,15 @@ written for a human, and the useful parts are already in the card.
 **Commands you did not cause.** Everything printed here came from a button in the panel or from a background task
 SFellow started for you.
 
+## When it opens by itself
+
+Starting work brings the console up, and you choose which work does that. **Salesforce CLI ▸ Console** has one
+checkbox per operation — *Deploy*, *Retrieve*, *Delete from org*, *Anonymous Apex*, *Schema refresh* — all on to
+begin with. A failure raises it whatever you have ticked: that is where the clickable errors are.
+
+The console belongs to Salesforce projects. Open an unrelated repository and there is no console on the bottom
+stripe, for the same reason there is no SFellow panel on the right.
+
 ## Clearing
 
 The toolbar has a **Clear**. Cards are not persisted between IDE sessions.

@@ -18,6 +18,15 @@ default Dev Hub; shows scratch-org expiry dates; lets you filter and hide discon
 
 **When it helps.** When you have eleven orgs and three of them are called something like `uat2`.
 
+**The status of the default org keeps itself honest.** It starts as whatever `sf org list` reported, but it does not
+stay frozen there: a command that reaches the org proves it is live, and one that fails on the network proves it is
+not, so the label follows what your commands actually do. Nothing extra is run to find this out — the answer is read
+off work you already asked for. Any other kind of failure changes nothing: a deploy that comes back with a compile
+error means the org answered, and guessing which failures are which would be worse than leaving the label alone.
+
+**With no network at all** the list still shows your orgs, each one marked `fetch failed`, rather than emptying
+itself and leaving you to wonder whether the plugin found anything.
+
 ## Connecting
 
 ![Logging in](img/orgs-login.png)

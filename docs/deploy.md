@@ -57,6 +57,18 @@ front of you.
 **Worth knowing before you turn it on.** On a shared sandbox every save of yours is immediately everyone's, including
 the half-written version. Check which org the panel is pointed at.
 
+## Deploying quietly
+
+The console comes up on its own when SFellow starts work, and you decide which work that is. The switches live in
+**Salesforce CLI ▸ Console** — one per operation: *Deploy*, *Retrieve*, *Delete from org*, *Anonymous Apex* and
+*Schema refresh*. All of them are on to begin with.
+
+Turning *Deploy* off is the one people reach for first: if you save often, the panel stops jumping over the bottom of
+your editor, and the result arrives as a notification instead — *Deployed 3 item(s)*, or the error.
+
+A failure opens the console whatever you have ticked. That is where the errors are, and each of them is a link to the
+line that caused it — hiding that would be a worse trade than the one you asked for.
+
 ## Test levels
 
 ![Choosing what Salesforce runs](img/deploy-test-levels.png)
