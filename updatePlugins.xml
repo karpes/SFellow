@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugins>
-  <plugin id="dev.karpes.sfellow" url="https://github.com/karpes/SFellow/releases/download/0.0.1-beta-741/SFellow-0.0.1-beta-741-signed.zip" version="0.0.1-beta-741">
+  <plugin id="dev.karpes.sfellow" url="https://github.com/karpes/SFellow/releases/download/0.0.1-beta-742/SFellow-0.0.1-beta-742-signed.zip" version="0.0.1-beta-742">
     <name>SFellow</name>
     <idea-version since-build="261"/>
   </plugin>
