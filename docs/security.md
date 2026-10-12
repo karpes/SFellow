@@ -10,10 +10,6 @@ The plugin contains no network client code. No telemetry, no analytics, no usage
 The only outbound traffic from your machine is whatever **your own `sf` CLI** makes when you ask the plugin to
 deploy, retrieve, run tests or fetch logs.
 
-It did not always work this way. The Apex compiler core used to be downloaded on first use; it now ships inside
-the plugin, so a fresh install needs no network at all — and neither does the Apex intelligence behind a proxy or
-a firewall.
-
 **Check it yourself.** Point a network monitor at your IDE and use the plugin. Five minutes, no trust required —
 which is the point of saying it this way round.
 
