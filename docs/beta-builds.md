@@ -1,6 +1,7 @@
 # Beta builds and why they expire
 
-Short version: **each beta stops working about six months after it was built.** Ask for a newer one and carry on.
+Short version: **each beta stops working about six months after it was built.** Install the newer one the IDE
+offers you and carry on.
 
 The longer version is below, because a build that switches itself off deserves an explanation rather than a
 surprise.
@@ -44,6 +45,7 @@ betas arrive as ordinary plugin updates: the IDE offers one, you accept, and the
 The practical effect of all this is that you stay on a recent build.
 
 If you would rather fetch one by hand, the builds are published at
-<https://github.com/karpes/SFellow/releases>, each with a SHA-256 checksum next to the archive.
+<https://github.com/karpes/SFellow/releases>. Each release carries the SHA-256 checksum of its archive in the
+release notes.
 
 There is no way to extend a build you already have, and that is on purpose.

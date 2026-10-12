@@ -16,9 +16,15 @@ inside the IDE. Run the tests and read the debug log without leaving it either.
 
 ## Install
 
-1. Ask for the current build - email **karpes.dev@gmail.com**. Builds are handed out directly for now.
-2. In the IDE: **Settings → Plugins → ⚙ → Install Plugin from Disk…**, pick the zip, restart.
+1. In the IDE: **Settings → Plugins → ⚙ → Manage Plugin Repositories…** and add
+   `https://karpes.github.io/SFellow/updatePlugins.xml`
+2. Find **SFellow** in the **Marketplace** tab of the same dialog, install it, restart. Updates arrive the same
+   way from then on.
 3. Open a Salesforce project (one with an `sfdx-project.json`) and the **SFellow** tool window appears on the right.
+
+The IDE will warn that the plugin is not coming from JetBrains — that is true of every third-party plugin, signed
+or not. What SFellow does with your machine, and how to check it yourself, is in
+[Security and privacy](docs/security.md).
 
 New to the plugin? [Getting started](docs/getting-started.md) walks the first half hour end to end.
 
@@ -26,8 +32,8 @@ New to the plugin? [Getting started](docs/getting-started.md) walks the first ha
 
 SFellow is a paid product. The price is not set yet, and nothing in the current builds asks you for money.
 
-What the current builds do have is an **expiry date**: each beta stops working roughly six weeks after it was built,
-and you ask for a newer one to replace it. That is a beta mechanism, not a countdown to a paywall -
+What the current builds do have is an **expiry date**: each beta stops working roughly six months after it was
+built, and the IDE offers a newer one to replace it. That is a beta mechanism, not a countdown to a paywall -
 [Beta builds](docs/beta-builds.md) explains exactly what expires, what keeps working, and why moving your clock back
 does not help.
 

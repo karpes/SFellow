@@ -43,9 +43,9 @@ disclaimer ship inside the plugin archive, as that licence requires.
 Two jars in `SFellow/lib/` — the plugin itself and the compiler core — and nothing else. `unzip -l` on the file you
 downloaded should match that exactly.
 
-Each build is published with a SHA-256 checksum. Compare against the checksum published **for that build**: builds
-are not byte-reproducible, so rebuilding the same version elsewhere yields a different checksum over identical
-contents.
+Each build is published with the SHA-256 checksum of its archive in the release notes. Compare against the
+checksum published **for that build** — builds are not byte-reproducible, so rebuilding the same version
+elsewhere yields a different checksum over identical contents.
 
 ## The archive is signed
 
