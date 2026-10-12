@@ -5,8 +5,17 @@ back. If you have used the Salesforce CLI before, none of this will surprise you
 
 ## 1. Install
 
-Ask for the current build — email **karpes.dev@gmail.com** — then **Settings → Plugins → ⚙ → Install Plugin from Disk…**
-and restart the IDE.
+Add the plugin repository once, and the IDE handles installs and updates from then on:
+
+**Settings → Plugins → ⚙ → Manage Plugin Repositories…** → add
+`https://karpes.github.io/SFellow/updatePlugins.xml`
+
+Then find **SFellow** in the **Marketplace** tab of the same dialog, install it, and restart the IDE.
+
+Before installing, the IDE will say the plugin is not coming from JetBrains, and that plugins run with the same
+permissions as the IDE process itself. That is true of every third-party plugin and appears whether or not the build
+is signed — it is not a warning about SFellow in particular. What SFellow does with those permissions, and how to
+check that for yourself rather than take our word for it, is in [Security and privacy](security.md).
 
 You also need the **Salesforce CLI** on your `PATH`. Check it in any terminal:
 

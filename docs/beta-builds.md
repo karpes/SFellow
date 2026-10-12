@@ -39,8 +39,11 @@ real one, given away — so the answer is no rather than nearly.
 
 ## Getting a working build again
 
-Request the newest build — email **karpes.dev@gmail.com** — and install it over the old one. Builds are handed
-out directly for now, so asking is the whole procedure. Every new beta carries a fresh expiry date, and the practical effect of all this is that you stay on
-a recent build.
+Nothing to request. Once you have added the plugin repository (see [Getting started](getting-started.md)), new
+betas arrive as ordinary plugin updates: the IDE offers one, you accept, and the fresh expiry date comes with it.
+The practical effect of all this is that you stay on a recent build.
+
+If you would rather fetch one by hand, the builds are published at
+<https://github.com/karpes/SFellow/releases>, each with a SHA-256 checksum next to the archive.
 
 There is no way to extend a build you already have, and that is on purpose.

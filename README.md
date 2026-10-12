@@ -48,6 +48,7 @@ does not help.
 | [Project and tree](docs/project.md) | New project, new components, `-meta.xml` nesting, deleting from the org |
 | [Schema](docs/schema.md) | Refresh Schema, when it re-runs itself, and where it is kept |
 | [Beta builds](docs/beta-builds.md) | Why builds expire and what happens when one does |
+| [Security and privacy](docs/security.md) | What leaves your machine, where credentials live, what is in the archive, and how to check it yourself |
 | [Troubleshooting](docs/troubleshooting.md) | `sf` not found, schema missing, plugin conflicts, where the log is |
 
 ## Bugs and requests
