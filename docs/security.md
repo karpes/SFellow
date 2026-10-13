@@ -47,6 +47,15 @@ Each build is published with the SHA-256 checksum of its archive in the release 
 checksum published **for that build** — builds are not byte-reproducible, so rebuilding the same version
 elsewhere yields a different checksum over identical contents.
 
+## Antivirus scanning
+
+A release archive can be looked up on [VirusTotal](https://www.virustotal.com/) by its SHA-256 — the same
+checksum published with the build. Where a report exists, the release notes link to it directly.
+
+Worth knowing before you read one: release builds are obfuscated, and heuristics occasionally read obfuscated
+bytecode as "packed". A lone heuristic hit from one engine out of seventy is that, not a finding. If you see
+something that looks real, tell us — **karpes.dev@gmail.com** — rather than assume.
+
 ## The archive is signed
 
 Release builds are signed with our own certificate, which protects the archive against being altered or substituted
