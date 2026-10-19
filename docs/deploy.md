@@ -33,12 +33,15 @@ at that point there is nothing left to deploy.
 | Action | What you get |
 |---|---|
 | **Compare with Last Deployed** | a diff against the version that last went to the org — no org call, so it works offline |
-| **Compare with Org** | a diff against what is in the org right now, fetched for the comparison |
+| **Compare with Default Org** | a diff against what is in the org right now, fetched for the comparison |
+| **Compare with Org...** | the same, against any connected org you pick |
 | **Retrieve from Org (Pull)** | the org's version replaces what is on disk, after confirming |
 | **Open File**, **Show in Project View**, **Copy Path** | the usual ways to get to the file |
 | **Remove Selected from List** | drops rows you do not intend to deploy |
 
 **Compare with Last Deployed** reads the text in your editor, so an unsaved edit shows up in the diff.
+
+Both comparisons are also in the right-click menu of the editor and of the project tree, under **SFellow** — on a file, or on a folder to ask about everything inside it. Asking what the org has is not the same question as what you changed, so it does not need the file to be in this list.
 
 ![What the right click offers](img/deploy-changed-files-menu.png)
 

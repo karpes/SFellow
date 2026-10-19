@@ -14,9 +14,12 @@ Tick whatever you want and press **Retrieve**; the files land in your project's 
 
 **When it helps.** Onboarding onto an org you did not build. "What Apex is even in here" is one expand away.
 
-**Before you press it.** Retrieve writes files, and the browser retrieves what you ticked without comparing it to
-what you have. To see the difference first, use **Compare with Org** on the file in [Changed Files](deploy.md), which
-also has a **Retrieve from Org (Pull)** that asks before it overwrites.
+**What it will not overwrite.** `Overwrite project` is off by default, and while it is off a retrieve brings only
+what your project does not have: anything already on disk is left exactly as it is, and the console says how many
+files it kept. Tick it when you do want the org's version to replace yours.
+
+To see the difference first, use **Compare with Default Org** — from [Changed Files](deploy.md), the editor, or the
+project tree. Changed Files also has a **Retrieve from Org (Pull)** that asks before it overwrites.
 
 ## Finding a type
 
